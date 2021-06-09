@@ -40,7 +40,7 @@ spec:
     spec:
       serviceAccountName: sa-grpcjava
       containers:
-        - name: productpage
+        - name: grpcjava
           image: docker.io/yuyalive/grpcjava:1.0
           imagePullPolicy: IfNotPresent
           ports:

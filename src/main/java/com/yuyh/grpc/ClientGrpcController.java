@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ClientGrpcController {
     @GetMapping("/grpc/{name}")
     public String hello(@PathVariable String name) {
-        ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost", 6565)
+        ManagedChannel channel = ManagedChannelBuilder.forAddress("grpcjava", 6565)
                 .usePlaintext()
                 .build();
 
